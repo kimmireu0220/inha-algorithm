@@ -140,8 +140,6 @@ def parallel_merge_sort(values: Sequence[int], max_workers: int | None = None) -
     1) 입력을 worker 개수만큼 분할
     2) 각 청크를 병렬로 정렬(sorted 사용)
     3) 정렬된 청크들을 순차 병합
-
-    참고: 작은 입력에서는 프로세스 오버헤드로 단일 스레드보다 느릴 수 있다.
     """
 
     arr = list(values)
